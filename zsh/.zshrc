@@ -24,6 +24,9 @@ alias mpv='mpv --vo=gpu --gpu-api=vulkan --hwdec=vaapi'
 # Alias for mbp12,1/arch/i3 keyboard backlit script
 alias kblit='set_kb_backlight'
 
+# Alias for inlyine
+alias inlyne="inlyne -c ~/.config/inlyne/inlyne.default.toml"
+
 # History file settings for zsh-suggestions
 HISTSIZE=10000
 SAVEHIST=10000
@@ -48,6 +51,7 @@ export BAT_CONFIG_PATH="/Users/randy99/.config/bat/config/bat.conf"
 
 export GDK_SCALE=1.25
 export GDK_DPI_SCALE=1.25
+export COLORTERM=truecolor
 
 export FZF_DEFAULT_OPTS=" --preview 'bat -n --color=always {}' --bind=down:preview-down --bind=up:preview-up \
 --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \

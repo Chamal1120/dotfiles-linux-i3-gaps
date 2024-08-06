@@ -1,0 +1,3 @@
+xft.dpi: 144
+xft.antialias: 1
+URxvt.font: xft:DejaVu Sans Mono:size=14

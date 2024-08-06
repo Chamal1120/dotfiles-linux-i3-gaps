@@ -3,26 +3,25 @@
 Dotfiles of my personal macOS rice flavoured with catppuccin-mocha theme.
 
 ## Preview
-![preview_01](/previews/preview_01.png)
+![preview_01]()
 
 ## What's in?
 
-1. `Kitty` terminal
-2. `Starship` prompt
-3. `ls` replaced with `eza`
-4. `$LS_COLORS` managed with `vivid`
-5. `zoxide` is configured (not aliased to cd though)
-6. `fzf` for fuzzy finding
-7. `cat` replaced with `bat`
-8. `fsh` for syntax highlighting
-9. `yazi` file explorer
-10. `btop` system monitor
-11. `neovim` (with LSP, Debugging, syntax highlighting and many more)
-12. `tmux` (Configured to use vim keys)
-13. `yabai` tiling WM for macOS
-14. `skhd` keymaps for yabai
-15. `fastfetch` (No catppuccin colors yet but WIP)
-16. `.hushlogin` file to disable "last login" message.
+1. `i3` Window Manager [WM]
+2. `Kitty` i3 sensible terminal
+3. `Starship` prompt
+4. `ls` replaced with `eza`
+5. `$LS_COLORS` managed with `vivid`
+6. `zoxide` is configured (not aliased to cd though)
+7. `fzf` for fuzzy finding
+8. `cat` replaced with `bat`
+9. `fsh` for syntax highlighting
+10. `yazi` file explorer
+11. `btop` system monitor
+12. `neovim` (with LSP, Debugging, syntax highlighting and many more)
+13. `tmux` (Configured to use vim keys)
+14. `fastfetch` and `neofetch` for sys-info fetching (No catppuccin colors yet but WIP)
+15. `.hushlogin` file to disable "last login" message.
 
 <br>
 
@@ -37,47 +36,25 @@ I don't have a script to automate the nessaasy package installations at the mome
 
 Till then, you need to manually install packages to your system.
 
-### for Mac users
-
-1. Install xcode command line tools
-
-```bash
-xcode-select --install
-```
-2. install homebrew
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-3. Install the nessary packages you need for your rice
-
-```bash
-# This will install all the packages I have used for the rice
-brew install git wget gcc fd fzf ripgrep eza neovim tmux starship zsh-fast-syntax-highlighting yazi yt-dlp stow bat btop zoxide fastfetch koekeishiya/formulae/skhd koekeishiya/formulae/yabai && brew install --cask kitty wezterm firefox alt-tab anaconda
-```
-
-### for Linux users
-
-** Just use your built in package manager and install the packages you need 😉
 
 ## How to use
 I manage my dotfiles with GNU `stow`. follow the below steps to simlink the files to necessary locations.
 
-1. Install stow using homebrew or with any package manager. (or build from source).
+1. Install with any package manager. (or build from source).
 
 ```bash
-brew install stow # if using homebrew (macOS/linux)
+yay -S stow # replace with your package manager's syntax
 ```
 
 2. clone the repo
 
 ```bash
-git clone https://github.com/Chamal1120/mac_rice.git
+git clone https://github.com/Chamal1120RE/dotfiles-linux.git
 ```
 3. Navigate to the directory
 
 ```bash
-cd mac_rice
+cd dotfiles-linux/
 ```
 
 4. Simlink the configs you need with `stow`.
