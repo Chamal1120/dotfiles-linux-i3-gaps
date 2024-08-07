@@ -1,9 +1,10 @@
-# Mac Rice ^_^
+# Dotfiles-linux (i3 | TTY login | Catppuccin flavoured)
 
-Dotfiles of my personal macOS rice flavoured with catppuccin-mocha theme.
+Dotfiles of my personal linux rice flavoured with catppuccin-mocha theme.
 
-## Preview
-![preview_01]()
+## Previews
+![preview_01](./previews/2024-08-07-130211_2560x1600_scrot.png)
+![preview_01](./previews/2024-08-07-120612_2560x1600_scrot.png)
 
 ## What's in?
 
@@ -20,7 +21,7 @@ Dotfiles of my personal macOS rice flavoured with catppuccin-mocha theme.
 11. `btop` system monitor
 12. `neovim` (with LSP, Debugging, syntax highlighting and many more)
 13. `tmux` (Configured to use vim keys)
-14. `fastfetch` and `neofetch` for sys-info fetching (No catppuccin colors yet but WIP)
+14. `fastfetch` and for sys-info fetching
 15. `.hushlogin` file to disable "last login" message.
 
 <br>
