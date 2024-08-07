@@ -16,11 +16,11 @@ exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 exec_always --no-startup-id feh --bg-scale ~/.config/bgwall/anime-lofi-3.jpg
 bindsym $mod+space exec rofi -show combi
 
-# Copy selected text to clipboard
-bindsym Ctrl+Shift+c exec --no-startup-id xclip -selection clipboard
+# Fullscreen screenshot
+bindsym $mod+p exec --no-startup-id scrot
 
-# Paste from clipboard
-bindsym Ctrl+Shift+v exec --no-startup-id xclip -selection clipboard -o | xdotool type --clearmodifiers --delay 0 "$(xclip -selection clipboard -o)
+# Screenshot of a selected area
+bindsym $mod+Shift+p exec --no-startup-id scrot -s
 
 # Remove title bars and borders for all windows
 new_window pixel 1
@@ -121,10 +121,10 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-#bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-#bindsym $mod+space focus mode_toggle
+bindsym $mod+Ctrl+Shift+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent

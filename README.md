@@ -31,12 +31,6 @@ Dotfiles of my personal macOS rice flavoured with catppuccin-mocha theme.
 <br>
 ➡️ tmux repo - https://github.com/Chamal1120/Custom_tmux_config
 
-## Prerequisites
-I don't have a script to automate the nessaasy package installations at the moment. (it's WIP).
-
-Till then, you need to manually install packages to your system.
-
-
 ## How to use
 I manage my dotfiles with GNU `stow`. follow the below steps to simlink the files to necessary locations.
 

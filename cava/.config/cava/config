@@ -4,16 +4,22 @@
 
 [general]
 
-; framerate = 60
+framerate = 30
+sensitivity = 70
 
 [input]
 
 method = pulse
 source = auto
+#; sample_rate = 44100
 
 [output]
 
-; method = noncurses
+method = noncurses
+bars = 10
+channels =  mono
+mono_option = left
+; smoothing = 0
 
 [color]
 
@@ -22,7 +28,7 @@ source = auto
 
 [smoothing]
 
-; noise_reduction = 77
+; noise_reduction = 100
 
 [eq]
 
